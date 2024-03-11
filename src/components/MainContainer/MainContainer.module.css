@@ -1,0 +1,11 @@
+.maincontainer {
+    width: 100%;
+    background-color: rgb(144, 165, 141);
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 10px;
+}
+
+.FirstArticleBlock {
+    display: flex;
+}

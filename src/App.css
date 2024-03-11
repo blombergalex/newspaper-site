@@ -1,0 +1,25 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #423e3e;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #000;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #656161;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+} 
