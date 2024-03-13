@@ -1,6 +1,8 @@
 import Article from '../Article';
 import styles from './MainContainer.module.css'
 // import articles from '../../data/data.js'
+import MainArticle from './MainArticle/index.jsx';
+import { mainStory } from '../../data/data';
 
 const MainContainer = () => {
     
@@ -16,7 +18,7 @@ const MainContainer = () => {
                     <Article />
                 </section>
                 <section className={styles.inFocus}>
-                    <Article headline='In Focus: War in Ukraine'/>
+                    <MainArticle {...mainStory}/>
                 </section>
                 <section className={styles.thirdColumn}>
                     <Article headline='Argentina won the fifa world cup'/>
