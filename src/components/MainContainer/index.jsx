@@ -6,12 +6,36 @@ const MainContainer = () => {
     
     return (
         <section className={styles.maincontainer}>
-            <>
-            <Article />
-            </>
-            <section className={styles.FirstArticleBlock}>
-                <Article />
-                <Article />
+
+            <section className={styles.firstArticleBlock}>
+                <section className={styles.recentNewsColumn}>
+                    <h1>Recent News</h1>
+                    <Article />
+                    <Article />
+                    <Article />
+                    <Article />
+                </section>
+                <section className={styles.inFocus}>
+                    <Article headline='In Focus: War in Ukraine'/>
+                </section>
+                <section className={styles.thirdColumn}>
+                    <Article headline='Argentina won the fifa world cup'/>
+                    <Article headline='X users vote oust Musk, CEO'/>
+                </section>
+            </section>
+
+            <section className={styles.secondArticleBlock}>
+                    <h1>International</h1>
+                <section className={styles.internationalArticles}>
+                    <Article />
+                    <Article />
+                    <Article />
+                </section>
+            </section>
+
+            <section className={styles.thirdArticleBlock}>
+                <h1>Sports</h1>
+                <Article/>
                 <Article />
             </section>
         </section>

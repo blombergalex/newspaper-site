@@ -4,7 +4,7 @@ import Navbar from '../Navbar'
 const Header = () => {
     return (
         <header className={styles.header}>
-            <p>This is the header</p>
+            <h1>News of the World</h1>
             < Navbar />
         </header>
     )

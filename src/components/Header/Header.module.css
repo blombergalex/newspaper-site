@@ -1,7 +1,11 @@
 header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     background-color: rgb(144, 165, 141);
-    height: 300px;
+    height: min-content;
     width: 100%;
     margin: 0 10px 0 0;
     padding: 0;
 }
+
