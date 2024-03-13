@@ -1,14 +1,13 @@
-// import MainImage from '../../../assets/ashes.jpeg'
-import { mockData } from '../../../data/data'
 import styles from './MainArticle.module.css'
+import { getImageURL } from '../../../utils/functions'
 
-const MainArticle = (headline, deck, story, category, image) => {
+const MainArticle = ({headline, deck, story, category, image}) => {
     return (
         <div className={styles.MainArticle}>
-            <img src={image} alt={`image of ${headline}`} width='300px'/>
-            <h2>{mockData.headline} {mockData.deck}</h2>
-            <p>{mockData.story}</p>
-            <p>{mockData.category}</p>
+            <img src={getImageURL(image)} alt={`image of ${headline}`} width='300px'/>
+            <h2>{headline} {deck}</h2>
+            <p>{story}</p>
+            <p>{category}</p>
         </div>
 
     )
